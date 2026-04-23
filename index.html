@@ -3,60 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XKMIX Checklist</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>XKMIX Oficial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
 
     <div id="captureArea" class="main-card">
-        <header>
-            <h1 class="logo-gothic">XKMIX</h1>
-            <p class="subtitle">Checklist de Abertura Oficial</p>
-            
-            <div class="form-group">
-                <input type="text" id="unidade" placeholder="Nome da Unidade" required>
-                <div class="row">
-                    <input type="text" id="responsavel" placeholder="Responsável">
-                    <input type="date" id="data">
-                </div>
-            </div>
-        </header>
+        <h1 class="logo-gothic">XKMIX</h1>
+        <p class="subtitle">Checklist de Abertura</p>
+        
+        <input type="text" id="unidade" placeholder="Unidade">
+        <input type="text" id="responsavel" placeholder="Responsável">
 
-        <main>
-            <div class="section-card">
-                <h3>Salão</h3>
-                <div class="checklist-grid">
-                    <label class="item"><input type="checkbox"><span>Bandeira</span></label>
-                    <label class="item"><input type="checkbox"><span>Condimentos</span></label>
-                    <label class="item"><input type="checkbox"><span>Lixeiras</span></label>
-                    <label class="item"><input type="checkbox"><span>Cadeiras e Mesas</span></label>
-                    <label class="item"><input type="checkbox"><span>Vidros</span></label>
-                    <label class="item"><input type="checkbox"><span>Leite Condensado</span></label>
-                </div>
-            </div>
+        <div class="section-card">
+            <h3>Salão</h3>
+            <label class="item"><input type="checkbox"><span>Bandeira</span></label>
+            <label class="item"><input type="checkbox"><span>Mesas e Cadeiras</span></label>
+            <label class="item"><input type="checkbox"><span>Vidros Limpos</span></label>
+            <label class="item"><input type="checkbox"><span>Lixeiras</span></label>
+        </div>
 
-            <div class="section-card">
-                <h3>Eletroeletrônicos</h3>
-                <div class="checklist-grid">
-                    <label class="item"><input type="checkbox"><span>Sistema</span></label>
-                    <label class="item"><input type="checkbox"><span>Lâmpadas</span></label>
-                    <label class="item"><input type="checkbox"><span>Internet</span></label>
-                    <label class="item"><input type="checkbox"><span>Som</span></label>
-                </div>
-            </div>
+        <div class="section-card">
+            <h3>Cozinha/Estoque</h3>
+            <label class="item"><input type="checkbox"><span>Frutas Cortadas</span></label>
+            <label class="item"><input type="checkbox"><span>Cremes</span></label>
+            <label class="item"><input type="checkbox"><span>Leite Condensado</span></label>
+        </div>
 
-            <div class="section-card">
-                <h3>Observações</h3>
-                <textarea id="obs" placeholder="Alguma ocorrência hoje?"></textarea>
-            </div>
-        </main>
+        <textarea id="obs" placeholder="Observações..." rows="3"></textarea>
     </div>
 
-    <button class="floating-btn" onclick="gerarRelatorio()">
-        Enviar Checklist
-    </button>
+    <button class="floating-btn" onclick="gerarRelatorio()">Enviar Checklist</button>
 
     <script src="script.js"></script>
 </body>
